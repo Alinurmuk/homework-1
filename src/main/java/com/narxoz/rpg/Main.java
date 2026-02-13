@@ -19,13 +19,10 @@ public class Main {
         com.narxoz.rpg.character.Character hero2 = mageFactory.createCharacter("Гендальф");
         com.narxoz.rpg.character.Character hero3 = archerFactory.createCharacter("Леголас");
 
-        // 2. Abstract Factory: Жабдықтар жасау
         EquipmentFactory medievalSet = new MedievalEquipmentFactory();
 
-        // 3. Жабдықтау және көрсету
         hero1.equipWeapon(medievalSet.createWeapon());
         hero1.equipArmor(medievalSet.createArmor());
-        
         hero1.displayStats();
         hero1.useSpecialAbility();
         System.out.println();
